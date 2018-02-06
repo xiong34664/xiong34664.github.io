@@ -95,7 +95,7 @@
         var style = getComputedStyle(elem, null);
   
         var mask = document.createElement('i');
-        mask.className = 'icon-film';
+        mask.className = 'fa fa-film';
         mask.style.color = '#fff';
         mask.style.fontSize = '26px';
         mask.style.position = 'absolute';
@@ -119,13 +119,13 @@
           for (var i = 0, len = data.link.length; i < len; i++) {
             var minSrc = 'http://p3puarvng.bkt.clouddn.com/image/max/' + data.link[i] + '.jpg?imageView2/1/w/170/h/170/interlace/0/q/100';
             //var src = 'https://raw.githubusercontent.com/fakeYanss/Blog_Album/master/photos/' + data.link[i];
-            var src = 'http://p3puarvng.bkt.clouddn.com/image/max/' + data.link[i]+'.jpg';
+            var src = 'http://p3puarvng.bkt.clouddn.com/image/max/' + data.link[i];
             var type = data.type[i];
             var target = src + (type === 'video' ? '.mp4' : '.jpg');
-            src += '?imageView2/1/w/1080/h/1080/interlace/1/q/75|watermark/2/text/5b2S/font/5b6u6L2v6ZuF6buR/fontsize/400/fill/I0Y4RTNFMw==/dissolve/48/gravity/SouthEast/dx/10/dy/10|imageslim';
+            src += '.jpg';
   
             liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                  <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
+                  <a href="' + src + '" itemprop="contentUrl" data-size="'+data.size[i]+'" data-type="' + type + '" data-target="' + target + '">\
                     <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="./assets/empty.png" itemprop="thumbnail" onload="lzld(this)">\
                   </a>\
                   <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
