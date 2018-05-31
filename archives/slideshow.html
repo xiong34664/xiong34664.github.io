@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://xiong34664.github.io">
-  <title>归期有期</title>
+  <title>PC端移动端无缝滚动轮播图 | 归期有期</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="归期有期">
-<meta property="og:url" content="https://xiong34664.github.io/404.html">
+  <meta name="description" content="代码已上传github PC端移动端都实现无缝滚动轮播图还支持左右滑动切换下面我将演示下在手机端的左右滑动的代码1.获取手指按下时在轮播图元素的什么位置记录下来2.当手机离开屏幕是获取最后为位置记录下来3.根据按下和离开是的位置左边获得到的手指滑动的方向(滑动距离须大于50)选择上一张或者下一张 123456789101112131415161718192021222324252627//1.先">
+<meta name="keywords" content="JavaScript,jQuery,touch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PC端移动端无缝滚动轮播图">
+<meta property="og:url" content="https://xiong34664.github.io/archives/slideshow.html">
 <meta property="og:site_name" content="归期有期">
+<meta property="og:description" content="代码已上传github PC端移动端都实现无缝滚动轮播图还支持左右滑动切换下面我将演示下在手机端的左右滑动的代码1.获取手指按下时在轮播图元素的什么位置记录下来2.当手机离开屏幕是获取最后为位置记录下来3.根据按下和离开是的位置左边获得到的手指滑动的方向(滑动距离须大于50)选择上一张或者下一张 123456789101112131415161718192021222324252627//1.先">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T13:36:01.328Z">
+<meta property="og:updated_time" content="2018-05-31T17:17:55.784Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="归期有期">
+<meta name="twitter:title" content="PC端移动端无缝滚动轮播图">
+<meta name="twitter:description" content="代码已上传github PC端移动端都实现无缝滚动轮播图还支持左右滑动切换下面我将演示下在手机端的左右滑动的代码1.获取手指按下时在轮播图元素的什么位置记录下来2.当手机离开屏幕是获取最后为位置记录下来3.根据按下和离开是的位置左边获得到的手指滑动的方向(滑动距离须大于50)选择上一张或者下一张 123456789101112131415161718192021222324252627//1.先">
   
     <link rel="alternative" href="/atom.xml" title="归期有期" type="application/atom+xml">
   
@@ -155,24 +159,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-PC端移动端无缝滚动轮播图" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PC端移动端无缝滚动轮播图
+    </h1>
+  
+
+        
+        <a href="/archives/slideshow.html" class="archive-article-date">
+  	<time datetime="2018-03-20T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-20</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="robots" content="index,follow">
-</head>
-<body>
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://xiong34664.github.io/" homepagename="回到我的主页">
-</script>
-</body>
-</html>
+        <p><strong> 代码已上传<a href="https://github.com/xiong34664/smallDemo/tree/master/slideshow" target="_blank" rel="noopener">github</a></strong></p>
+<p>PC端移动端都实现无缝滚动轮播图<br>还支持左右滑动切换<br>下面我将演示下在手机端的左右滑动的代码<br>1.获取手指按下时在轮播图元素的什么位置记录下来<br>2.当手机离开屏幕是获取最后为位置记录下来<br>3.根据按下和离开是的位置左边获得到的手指滑动的方向(滑动距离须大于50)选择上一张或者下一张</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.先获取手指在轮播图元素上  一个滑动方向(左右)</span></span><br><span class="line">        <span class="comment">//手指触摸开始记录手指所在坐标X</span></span><br><span class="line">        <span class="comment">// 比大小</span></span><br><span class="line">        <span class="keyword">var</span> startX, endX;</span><br><span class="line">        <span class="comment">//注册滑动事件</span></span><br><span class="line">        $(<span class="string">".imgBox"</span>).on(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">            <span class="comment">//手指开始时记录手指所在坐标</span></span><br><span class="line">            startX = e.originalEvent.touches[<span class="number">0</span>].clientX;</span><br><span class="line">            clearInterval(timerId);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".imgBox"</span>).on(<span class="string">"touchend"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">            <span class="comment">//手指结束时记录手指所在坐标</span></span><br><span class="line">            endX = e.originalEvent.changedTouches[<span class="number">0</span>].clientX;</span><br><span class="line"></span><br><span class="line">            <span class="comment">//控制精度</span></span><br><span class="line">            <span class="comment">//获取每次运动的距离,当距离大于一定值时认为是有方向的</span></span><br><span class="line">            <span class="keyword">var</span> distance = <span class="built_in">Math</span>.abs(startX - endX);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>( distance &gt; <span class="number">50</span>) &#123;</span><br><span class="line">                <span class="comment">//2.根据获得到的方向选择上一张或者下一张</span></span><br><span class="line">                startX &lt; endX ? prev() : next()</span><br><span class="line">            &#125;</span><br><span class="line">            timerId = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                next()</span><br><span class="line">            &#125;, <span class="number">3000</span>);</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
+<p><iframe src="https://xiong34664.github.io/smallDemo/slideshow/" style="width:100%;height:340px;border: none;"></iframe></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个轮播图花费了我不少的时间因为需要处理的事件实在太多,但是做出来后感觉非常满足😌的哈哈</p>
+
       
 
       
@@ -201,7 +213,37 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">touch</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/jQuery//" class="article-tag-list-link color2">jQuery</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -251,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://xiong34664.github.io/404.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://xiong34664.github.io/archives/slideshow.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -263,6 +305,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/archives/exercise_frame.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js运动框架封装</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -276,6 +328,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">1.</span> <span class="toc-text">总结</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -296,7 +361,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "https://xiong34664.github.io/404.html",
+  id: "https://xiong34664.github.io/archives/slideshow.html",
   owner: 'xiong34664',
   repo: 'xiong34664.github.io',
   oauth: {
@@ -329,7 +394,7 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

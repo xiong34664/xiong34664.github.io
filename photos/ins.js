@@ -117,9 +117,9 @@
           var data = res.list[j].arr;
           var liTmpl = "";
           for (var i = 0, len = data.link.length; i < len; i++) {
-            var minSrc = 'http://p3puarvng.bkt.clouddn.com/image/max/' + data.link[i] + '.jpg?imageView2/1/w/170/h/170/interlace/0/q/100';
+            var minSrc = 'http://p3puarvng.bkt.clouddn.com/images/' + data.link[i] + '.jpg?imageView2/1/w/170/h/170/interlace/0/q/100';
             //var src = 'https://raw.githubusercontent.com/fakeYanss/Blog_Album/master/photos/' + data.link[i];
-            var src = 'http://p3puarvng.bkt.clouddn.com/image/max/' + data.link[i];
+            var src = 'http://p3puarvng.bkt.clouddn.com/images/' + data.link[i];
             var type = data.type[i];
             var target = src + (type === 'video' ? '.mp4' : '.jpg');
             src += '.jpg';
